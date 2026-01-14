@@ -21,6 +21,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests "*isPrimeCorrect*"
         timeout: 10
+        max-score: 1
     - name: first10DigitPrimeInETest
       id: first10digitprimeinetest
       uses: classroom-resources/autograding-command-grader@v1
@@ -29,6 +30,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests "*first10DigitPrimeInETest*"
         timeout: 10
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
